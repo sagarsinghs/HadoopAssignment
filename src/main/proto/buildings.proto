@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package example.building;
+
+message BuildingsData{
+  string building_code=1;
+  int32 total_floors = 2;
+  string companies_in_building=3;
+  string cafeteria_code=4;
+
+}

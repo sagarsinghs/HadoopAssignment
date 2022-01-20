@@ -1,0 +1,6 @@
+//to copy the file from local_file to the hadoop folder
+**hdfs dfs -copyFromLocal /Users/sagarsangam/documents/inputDirs/File/file1.csv /Users/sagarsangam/Downloads/directory1
+
+//to delete a file from hadoopp directory
+**hadoop fs -rm /Users/sagarsangam/Downloads/directory1/map_reduce1.txt
+

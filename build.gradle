@@ -1,0 +1,55 @@
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.18'
+    }
+}
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+repositories {
+    mavenCentral()
+
+}
+
+
+
+
+apply plugin: 'java'
+apply plugin: 'com.google.protobuf'
+apply plugin: 'idea'
+dependencies {
+    implementation group: 'org.apache.hadoop', name: 'hadoop-hdfs', version: '3.3.1'
+    implementation group: 'org.apache.hadoop', name: 'hadoop-common', version: '3.3.1'
+    implementation group: 'org.apache.hadoop', name: 'hadoop-client', version: '3.3.1'
+    implementation group: 'org.apache.hbase', name: 'hbase-common', version: '0.98.6-hadoop2'
+    implementation group: 'org.apache.hbase', name: 'hbase-client', version: '1.4.3'
+    implementation group: 'org.apache.hbase', name: 'hbase-mapreduce', version: '2.1.0'
+    implementation group: 'com.opencsv', name: 'opencsv', version: '5.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+
+    implementation 'com.google.protobuf:protobuf-java:3.19.1'
+    implementation 'com.google.protobuf:protobuf-java-util:3.19.1'
+
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+}
+
+protobuf {
+
+    // Configure the protoc executable
+    protoc {
+        // Download from repositories
+        artifact = 'com.google.protobuf:protoc:3.19.1'
+    }
+
+}
+test {
+    useJUnitPlatform()
+}

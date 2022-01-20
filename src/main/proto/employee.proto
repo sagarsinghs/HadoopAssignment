@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package example.employees;
+
+message EmployeeDetails{
+  string name=1;
+  string building_code = 2;
+  int32 salary=3;
+  string department=4;
+  NumberOfFloors num_of_floors=5;
+
+}
+
+enum NumberOfFloors {
+  UNKNOWN = 0;
+  ONE_FLOOR=1;
+  TWO_FLOORS = 2;
+  THREE_FLOORS = 3;
+  FOUR_FLOORS = 4;
+  FIVE_FLOORS= 5;
+  SIX_FLOORS = 6;
+  SEVEN_FLOORS = 7;
+  EIGHT_FLOORS= 8;
+  NINE_FLOORS=9;
+  TEN_FLOORS=10;
+}
