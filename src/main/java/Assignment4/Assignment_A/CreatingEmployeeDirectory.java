@@ -1,17 +1,16 @@
-package Assignment1;
+package Assignment4.Assignment_A;
 
-import java.io.File;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+
 import java.io.IOException;
 import java.net.URI;
 
-import org.apache.hadoop.fs.FileSystem;
-import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.conf.Configuration;
-
-public class CreatingDirectory {
+public class CreatingEmployeeDirectory {
 
     private static final String uri = "hdfs://localhost:9000/Users/sagarsangam/Downloads/";
-    private static final String directory = uri + "Assignments";
+    private static final String directory = uri + "Employees";
     static final Configuration config = new Configuration();
 
     public static void createDirectory() throws IOException {

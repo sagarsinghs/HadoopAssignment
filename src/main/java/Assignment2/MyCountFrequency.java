@@ -23,8 +23,8 @@ public class MyCountFrequency {
         job.setReducerClass(MyReducer.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
-        FileInputFormat.addInputPath(job, new Path("hdfs://localhost:9000//Users/sagarsangam/Downloads/directory1/map_reduce1.txt"));
-        FileOutputFormat.setOutputPath(job, new Path("hdfs://localhost:9000//Users/sagarsangam/Downloads/directory1/output_txt1"));
+        FileInputFormat.addInputPath(job, new Path("hdfs://localhost:9000//Users/sagarsangam/Downloads/directory1"));
+        FileOutputFormat.setOutputPath(job, new Path("hdfs://localhost:9000//Users/sagarsangam/Downloads/output_txt1"));
 
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }

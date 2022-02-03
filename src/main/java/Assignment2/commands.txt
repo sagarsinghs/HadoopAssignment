@@ -4,3 +4,20 @@
 //to delete a file from hadoopp directory
 **hadoop fs -rm /Users/sagarsangam/Downloads/directory1/map_reduce1.txt
 
+//to view the data of hdfs in terminal
+cat hadoop fs -ls /Users/sagarsangam/Downloads/Assignments
+
+//to copy the file from hadoop folder to local_file
+hdfs dfs -copyToLocal /Users/sagarsangam/Downloads/Assignments/file90.csv /Users/sagarsangam/Documents/
+
+
+//when the error is Master is initializing in hbase shell
+**before doing this make sure all the bservers are not running that is ./start-all.sh and ./stop-hbase.sh should be used
+go to opt/Cellar/zookeeper/3.7.0_1/bin
+then
+ ./zkCli
+ls /  ---->//to check the directory inside
+
+and after that delete the hbase using
+deleteall /hbase
+

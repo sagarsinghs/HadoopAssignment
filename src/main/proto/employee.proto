@@ -8,6 +8,7 @@ message EmployeeDetails{
   int32 salary=3;
   string department=4;
   NumberOfFloors num_of_floors=5;
+  string cafeteria_code=6;
 
 }
 

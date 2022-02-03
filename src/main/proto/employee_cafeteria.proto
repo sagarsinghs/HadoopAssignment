@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package example.employees;
+
+message EmployeeDetailsCafeteria{
+  string nameCafeteria=1;
+  string building_codeCafeteria = 2;
+  int32 salaryCafeteria=3;
+  string departmentCafeteria=4;
+  NumberOfFloorsCafeteria num_of_floorsCafeteria=5;
+
+}
+
+enum NumberOfFloorsCafeteria {
+  UNKNOWN_CAFETERIA = 0;
+  ONE_FLOOR_CAFETERIA=1;
+  TWO_FLOORS_CAFETERIA = 2;
+  THREE_FLOORS_CAFETERIA = 3;
+  FOUR_FLOORS_CAFETERIA = 4;
+  FIVE_FLOORS_CAFETERIA= 5;
+  SIX_FLOORS_CAFETERIA = 6;
+  SEVEN_FLOORS_CAFETERIA = 7;
+  EIGHT_FLOORS_CAFETERIA= 8;
+  NINE_FLOORS_CAFETERIA=9;
+  TEN_FLOORS_CAFETERIA=10;
+}

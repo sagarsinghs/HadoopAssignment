@@ -54,6 +54,7 @@ public class Driver {
 
                 //builder.setNumberOfFloors(Employee.NumberOfFloors.TEN_FLOORS);
                 builder.setName(fields[0]);
+
                 builder.setBuildingCode(fields[1]);
                 builder.setDepartment(fields[2]);
                 if(!(fields[3].charAt(0)>=48 && fields[3].charAt(0)<=57))
@@ -106,7 +107,6 @@ public class Driver {
                      break;
 
             case 2:
-
                 employeeDetails();
                 break;
 
