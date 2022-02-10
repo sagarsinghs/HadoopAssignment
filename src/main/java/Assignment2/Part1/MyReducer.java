@@ -1,4 +1,4 @@
-package Assignment2;
+package Assignment2.Part1;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
